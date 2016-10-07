@@ -44,7 +44,7 @@ angular.module('bd')
 		});
 
 		$http({
-			url: '/api/v1/employee/n606124',
+			url: '/api/v1/employee/123456a',
 			method: 'GET',
 		}).then(function(response){
 			console.log(response.data[0].image);
