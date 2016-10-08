@@ -20,7 +20,7 @@ db.serialize(function() {
   db.run("CREATE TABLE image (image_id integer not null, empid varchar(7) not null, image_type varchar(25) not null, image blob not null, image_size varchar(25), image_ctgy varchar(25) not null,"+
    "image_name varchar(50) not null, primary key (image_id), foreign key (empid) references employee(sid) );");
  
-  var emps = [["123456a", "Paul Williams", "badass"], ["987654b", "Crud LeFountain", "sadbag"]];
+  var emps = [["123456a", "Paul Williams", "badass"], ["987654b", "Crud Muffin", "brotendo"]];
   var stmt = db.prepare("INSERT INTO employee VALUES (?,?,?)");
   for (var i = 0; i < 2; i++) {
       stmt.run(emps[i][0], emps[i][1], emps[i][2]);
